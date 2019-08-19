@@ -1,0 +1,35 @@
+2019-08-19 17:16:20.422 [main] INFO  c.l.springbootehcache.SpringbootehcacheApplication - Starting SpringbootehcacheApplication on DESKTOP-0R2GESS with PID 1904 (F:\IDEA_workSpace\springbootehcache\target\classes started by 26939 in F:\IDEA_workSpace\springbootehcache)
+2019-08-19 17:16:20.426 [main] INFO  c.l.springbootehcache.SpringbootehcacheApplication - The following profiles are active: dev
+2019-08-19 17:16:21.715 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-19 17:16:21.728 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-19 17:16:21.736 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-19 17:16:21.736 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-19 17:16:21.830 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-19 17:16:21.830 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1310 ms
+2019-08-19 17:16:21.941 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2019-08-19 17:16:22.330 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-08-19 17:16:22.809 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-19 17:16:23.184 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-19 17:16:23.208 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-19 17:16:23.211 [main] INFO  c.l.springbootehcache.SpringbootehcacheApplication - Started SpringbootehcacheApplication in 3.363 seconds (JVM running for 4.943)
+2019-08-19 17:17:39.791 [http-nio-8080-exec-8] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-19 17:17:39.791 [http-nio-8080-exec-8] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-08-19 17:17:39.803 [http-nio-8080-exec-8] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2019-08-19 17:18:00.627 [http-nio-8080-exec-9] DEBUG c.l.s.mapper.StudentMapper.getStudentAll - ==>  Preparing: select * from student 
+2019-08-19 17:18:00.816 [http-nio-8080-exec-9] DEBUG c.l.s.mapper.StudentMapper.getStudentAll - ==> Parameters: 
+2019-08-19 17:18:00.888 [http-nio-8080-exec-9] DEBUG c.l.s.mapper.StudentMapper.getStudentAll - <==      Total: 6
+2019-08-19 17:18:53.871 [http-nio-8080-exec-3] DEBUG c.l.s.mapper.StudentMapper.saveStudent - ==>  Preparing: INSERT INTO student ( name, age ) values ( ?, ? ) 
+2019-08-19 17:18:53.994 [http-nio-8080-exec-3] DEBUG c.l.s.mapper.StudentMapper.saveStudent - ==> Parameters: 红九(String), 20(Integer)
+2019-08-19 17:18:54.009 [http-nio-8080-exec-3] DEBUG c.l.s.mapper.StudentMapper.saveStudent - <==    Updates: 1
+2019-08-19 17:20:02.824 [http-nio-8080-exec-10] DEBUG c.l.s.mapper.StudentMapper.getStudentById - ==>  Preparing: select * from student where id = ? 
+2019-08-19 17:20:02.927 [http-nio-8080-exec-10] DEBUG c.l.s.mapper.StudentMapper.getStudentById - ==> Parameters: 8(Integer)
+2019-08-19 17:20:02.930 [http-nio-8080-exec-10] DEBUG c.l.s.mapper.StudentMapper.getStudentById - <==      Total: 1
+2019-08-19 17:20:21.886 [http-nio-8080-exec-3] DEBUG c.l.s.mapper.StudentMapper.deleteStudentById - ==>  Preparing: delete from student where id = ? 
+2019-08-19 17:20:21.977 [http-nio-8080-exec-3] DEBUG c.l.s.mapper.StudentMapper.deleteStudentById - ==> Parameters: 8(Integer)
+2019-08-19 17:20:22.025 [http-nio-8080-exec-3] DEBUG c.l.s.mapper.StudentMapper.deleteStudentById - <==    Updates: 1
+2019-08-19 17:20:28.596 [http-nio-8080-exec-6] DEBUG c.l.s.mapper.StudentMapper.deleteStudentById - ==>  Preparing: delete from student where id = ? 
+2019-08-19 17:20:28.596 [http-nio-8080-exec-6] DEBUG c.l.s.mapper.StudentMapper.deleteStudentById - ==> Parameters: 8(Integer)
+2019-08-19 17:20:28.597 [http-nio-8080-exec-6] DEBUG c.l.s.mapper.StudentMapper.deleteStudentById - <==    Updates: 0
+2019-08-19 17:20:49.684 [http-nio-8080-exec-9] DEBUG c.l.s.mapper.StudentMapper.getStudentById - ==>  Preparing: select * from student where id = ? 
+2019-08-19 17:20:49.685 [http-nio-8080-exec-9] DEBUG c.l.s.mapper.StudentMapper.getStudentById - ==> Parameters: 8(Integer)
+2019-08-19 17:20:49.687 [http-nio-8080-exec-9] DEBUG c.l.s.mapper.StudentMapper.getStudentById - <==      Total: 0
